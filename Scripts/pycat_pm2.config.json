@@ -1,0 +1,13 @@
+{
+    "apps": [{
+        "name": "PyCat",
+        "script": "/var/www/vubble-categorizer/pyCategorizer/main.py",
+        "args": [""],
+        "instances": "1",
+        "wait_ready": true,
+        "autorestart": true,
+        "max_restarts": 20,
+        "exec_mode": "fork",
+        "interpreter" : "/var/www/vubble-categorizer/pyCategorizer/catenv/bin/python3"
+    }]
+}
