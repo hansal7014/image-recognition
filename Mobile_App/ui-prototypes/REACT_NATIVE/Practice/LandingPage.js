@@ -48,7 +48,9 @@ const MainNavigator = createStackNavigator(
     {
         LandingPage: {
             screen: LandingPage,
-            navigationOptions: { headerShown: false }
+            navigationOptions: {
+                headerShown: false
+            }
         },
         Login: {
             screen: Login,
