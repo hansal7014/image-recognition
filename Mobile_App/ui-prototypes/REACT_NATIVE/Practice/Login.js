@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, Image, StyleSheet, ImageBackground, ToastAndroid, TouchableHighlight } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 
-class Login extends React.Component {
+class Login extends Component {
 
     forgot_password_press = () => {
         ToastAndroid.show('forgot my password!', ToastAndroid.SHORT);
@@ -12,6 +12,7 @@ class Login extends React.Component {
         return (
             <ImageBackground source={require('./android/app/src/main/res/background.png')} style={styles.backgroundImage} blurRadius={5}>
                 <View style={styles.darker} >
+
                     <View style={styles.loginPageContent}>
                         <Image source={require('./android/app/src/main/res/logo.png')} style={styles.logo} style={styles.logo} />
 

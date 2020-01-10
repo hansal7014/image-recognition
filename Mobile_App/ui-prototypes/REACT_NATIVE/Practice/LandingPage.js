@@ -5,7 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Login from './Login';
 import SignUp from './SignUp';
 
-class LandingPage extends React.Component {
+class LandingPage extends Component {
 
     on_login_press = () => {
         ToastAndroid.show('login button pressed', ToastAndroid.SHORT);
