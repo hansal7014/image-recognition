@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Image, StyleSheet, ImageBackground, Button, Alert, TouchableHighlight } from 'react-native';
+import { Text, View, Image, StyleSheet, ImageBackground, Button, Alert, TouchableHighlight, ToastAndroid } from 'react-native';
 
 const styles = StyleSheet.create({
     landingPageContent: {
@@ -59,13 +59,19 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     buttons: {
+    },
+    buttonPress: {
     }
 });
 
 class LandingPage extends Component {
 
-    _onPressButton = () => {
-
+    on_login_press = () => {
+        ToastAndroid.show('login button pressed', ToastAndroid.SHORT);
+    }
+    
+    on_signup_press = () => {
+        ToastAndroid.show('signup button pressed', ToastAndroid.SHORT);
     }
 
     render() {
@@ -75,10 +81,12 @@ class LandingPage extends Component {
                     <View style={styles.landingPageContent}>
                         <Image source={require('./android/app/src/main/res/logo.png')} style={styles.logo} />
                         <View style={styles.buttons}>
-                            <View style={styles.loginButton}>
-                                <Text style={styles.buttonText}>I have an account</Text>
-                            </View>
-                            <TouchableHighlight onPress={this._onPressButton}>
+                            <TouchableHighlight style={styles.buttonPress} onPress={this.on_login_press}>
+                                <View style={styles.loginButton}>
+                                    <Text style={styles.buttonText}>I have an account</Text>
+                                </View>
+                            </TouchableHighlight>
+                            <TouchableHighlight style={styles.buttonPress} onPress={this.on_signup_press}>
                                 <View style={styles.signupButton}>
                                     <Text style={styles.buttonText}>I don't have an account</Text>
                                 </View>
