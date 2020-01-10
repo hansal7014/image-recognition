@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     position: "absolute"
   },
   logo: {
-    width: 595 / 2.75,
-    height: 842 / 2.75,
+    width: 595 / 2.6,
+    height: 842 / 2.6,
     justifyContent: 'flex-start'
   },
   darker: {
