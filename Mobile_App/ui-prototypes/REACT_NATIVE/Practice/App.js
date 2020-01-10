@@ -28,10 +28,10 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     backgroundColor: 'rgba(0,0,0,0.5)',
-    paddingTop: 10,
+    paddingTop: 2,
     paddingBottom: 10,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingStart: 26,
+    paddingEnd: 26,
     marginBottom: 10,
     shadowRadius: 5,
     shadowColor: 'rgba(0,0,0,0.7)',
@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
   },
   signupButton: {
     backgroundColor: 'rgba(0,0,0,0.0)',
-    paddingTop: 10,
+    paddingTop: 2,
     paddingBottom: 10,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingStart: 26,
+    paddingEnd: 26,
     shadowRadius: 5,
     shadowColor: 'rgba(0,0,0,0.7)',
     borderRadius: 50,
@@ -71,10 +71,10 @@ class LandingPage extends Component {
             <Image source={require('./android/app/src/main/res/logo.png')} style={styles.logo} />
             <View style={styles.buttons}>
               <View style={styles.loginButton}>
-                <Text style={styles.buttonText}>I have an account!</Text>
+                <Text style={styles.buttonText}>I have an account</Text>
               </View>
               <View style={styles.signupButton}>
-                <Text style={styles.buttonText}>I don't have an account!</Text>
+                <Text style={styles.buttonText}>I don't have an account</Text>
               </View>
             </View>
           </View>
