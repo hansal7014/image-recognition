@@ -1,7 +1,6 @@
 # Mobile Application Development
 Mobile application (built using React Native) code for the image recognition project.
 
-###Contents
+UI Prototypes:
 
-UI Prototypes
-Screenshots (updated as UI Prototypes created): https://www.dropbox.com/sh/ef3mwv0t1w6hwkx/AABzDZ9pKUApRJCB46Lj0nyxa?dl=0
+Screenshots (updated as UI Prototypes created): https://www.dropbox.com/s/w3ni3w8oykpc53b/Screenshot_20200109-230920_Practice.png?dl=0
