@@ -30,12 +30,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.5)',
     paddingTop: 10,
     paddingBottom: 10,
-    paddingLeft: 80,
-    paddingRight: 80,
+    paddingLeft: 30,
+    paddingRight: 30,
     marginBottom: 10,
     shadowRadius: 5,
     shadowColor: 'rgba(0,0,0,0.7)',
-    borderRadius: 50
+    borderRadius: 50,
+    borderColor: 'rgba(0,0,0,0.5)',
+    borderWidth: 5
   },
   signupButton: {
     backgroundColor: 'rgba(0,0,0,0.0)',
@@ -50,8 +52,10 @@ const styles = StyleSheet.create({
     borderWidth: 5
   },
   buttonText: {
-    fontFamily: 'GoogleSans-Regular',
+    fontFamily: 'Quicksand-Regular',
     fontSize: 36,
+    textAlign: "center",
+    textAlignVertical: "center",
     color: 'white'
   },
   buttons: {
