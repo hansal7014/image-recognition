@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     borderWidth: 5
   },
   buttonText: {
-    fontFamily: 'Quicksand-Regular',
+    fontFamily: 'GoogleSans-Regular',
     fontSize: 36,
     color: 'white'
   },
