@@ -1,0 +1,1 @@
+The pictures on this folder are used ofr local tests of inception. 
