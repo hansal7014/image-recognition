@@ -38,10 +38,13 @@ from categories import labels_to_names
 # 2. FUNCTION TO GET TENSORFLOW SESSION
 # ----------------------------------------------------------------------------
 def get_session():
-    config = tf.ConfigProto()
+    #config = tf.ConfigProto() # Old TF version
+    config = tf.compat.v1.ConfigProto()
+
     # ATTENTION: UNCOMMENT THE LINE BELLOW FOR GPU !!!!
     #config.gpu_options.allow_growth = true
-    return tf.Session(config=config)
+    # return tf.Session(config=config) # Old TF version
+    return tf.compat.v1.Session(config=config)
 # ----------------------------------------------------------------------------
 
 # ----------------------------------------------------------------------------
@@ -52,7 +55,8 @@ def get_session():
 #os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 # ----------------------------------------------------------------------------
 # Set the modified tf session as backend in keras
-keras.backend.tensorflow_backend.set_session(get_session())
+tf.compat.v1.keras.backend.set_session(get_session())
+#keras.backend.tensorflow_backend.set_session(get_session())
 # ----------------------------------------------------------------------------
 
 # ----------------------------------------------------------------------------
