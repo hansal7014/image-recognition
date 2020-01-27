@@ -1,14 +1,9 @@
 {
-  "name": "node_backend",
+  "name": "mobile_app",
   "version": "1.0.0",
-  "description": "Node Server for image recognition",
+  "description": "Front end for image recognition",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -16,5 +11,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^1.7.0"
-  }
+  },
+  "scripts": {
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
